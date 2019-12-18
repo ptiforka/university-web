@@ -1,0 +1,38 @@
+#!/bin/bash
+
+cd ..
+mkdir Web2019
+cd Web2019
+mkdir TempFolder
+cd TempFolder
+touch Practice1.web
+
+echo "Volodymir Tsiluiko
+in-73" > Practice1.web
+
+mv -i Practice1.web ..
+cd ..
+chmod -w Practice1.web
+
+while IFS= read -r line
+do
+  echo "$line"
+done < "/Users/ptiforka/Desktop/university/Web2019/Practice1.web"
+
+chmod 644 Practice1.web
+cp Practice1.web TempFolder/Practice1_.web
+date >> Practice1.web
+
+echo "Practice1 result: " >> result.txt
+while IFS= read -r line
+do
+  echo "$line" >> result.txt
+done < "/Users/ptiforka/Desktop/university/Web2019/Practice1.web"
+
+echo "Practice1_ result: " >> result.txt
+while IFS= read -r line
+do
+  echo "$line" >> result.txt
+done < "/Users/ptiforka/Desktop/university/Web2019/TempFolder/Practice1_.web"
+
+nvim result.txt
