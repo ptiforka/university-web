@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="contact-us.css" />
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Landing page of medical center" />
+    <meta property="og:description" content="Lorem" />
+    <link rel="stylesheet" href="header.css" />
+    <title>Landing page of medical center</title>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <header class="header">
+      <img
+        style="padding-left: 650px"
+        width="30"
+        height="30"
+        class="img"
+        src="favicon.ico"
+        alt="img"
+      />
+      <div class="box">
+        WEB
+        <ul class="menu">
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+        </ul>
+      </div>
+    </header>
+    <div style="padding-top: 50px">
+      <h2>About the center</h2>
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit...
+      </p>
+      <h3>Our services</h3>
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit...
+      </p>
+      <h3>Our staff</h3>
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit...
+      </p>
+    </div>
+
+    <div>
+      js lab
+      <label>
+        alert <input type="checkbox" onchange="toggleCheckbox()"
+      /></label>
+      <label
+        >console log<input type="text" id="js-leave-id" onfocusout="onLeave()"
+      /></label>
+      <label
+        >show form? <input type="checkbox" id="showForm" onchange="showFrom(this)"
+      /></label>
+    </div>
+    <div class="container">
+      <form id="myForm" style="display:none">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset>
+          <label>
+            Your name(but i want to use placeholder)
+            <input
+              placeholder="Your name"
+              type="text"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>
+            <input
+              placeholder="Your Email Address"
+              type="email"
+              tabindex="2"
+              name="email"
+              required
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Phone Number"
+            type="tel"
+            tabindex="3"
+            name="phone"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Web Site starts with http://"
+            type="url"
+            tabindex="4"
+            name="url"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Type your Message Here...."
+            tabindex="5"
+            name="message"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <label>
+            checkboxes
+            <input type="checkbox" name="checkboxes" checked />
+          </label>
+        </fieldset>
+        <fieldset>
+          <input
+            type="radio"
+            id="contactChoice1"
+            name="contact"
+            value="email"
+          />
+          <label for="contactChoice1">Email</label>
+
+          <input
+            type="radio"
+            id="contactChoice2"
+            name="contact"
+            value="phone"
+          />
+          <label for="contactChoice2">Phone</label>
+
+          <input type="radio" id="contactChoice3" name="contact" value="mail" />
+          <label for="contactChoice3">Mail</label>
+        </fieldset>
+
+        <fieldset>
+          <select>
+            <option name="car" value="volvo">Volvo</option>
+            <option name="car" value="saab">Saab</option>
+            <option name="car" value="mercedes">Mercedes</option>
+            <option name="car" value="audi">Audi</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+            class="button"
+          >
+            Submit
+          </button>
+        </fieldset>
+        <fieldset>
+          <input type="reset" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <p>Copyrighting info</p>
+  </footer>
+</html>
